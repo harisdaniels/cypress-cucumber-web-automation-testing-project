@@ -1,0 +1,482 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login page feature admin-demo.nopcommerce.com",
+    "line": 1,
+    "id": "login-page-feature-admin-demo.nopcommerce.com",
+    "tags": [],
+    "uri": "Login.feature",
+    "elements": [
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;successful-login-with-valid-credentials-(positive)",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successful Login with Valid Credentials (Positive)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1502000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 903000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 8015000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Page title should be \"Dashboard / nopCommerce administration\"",
+            "result": {
+              "status": "passed",
+              "duration": 3043000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "Admin clicks on Logout link",
+            "result": {
+              "status": "passed",
+              "duration": 2753000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Page title should be \"Your store. Login\"",
+            "result": {
+              "status": "passed",
+              "duration": 3035000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;unsuccessful-login-with-invalid-password-(negative)",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "UnSuccessful Login with Invalid Password (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1238000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 1085000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 2850000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 3036000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;unsuccessful-login-with-invalid-credentials-wrong-email-and-wrong-password-(negative)",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "UnSuccessful Login with Invalid Credentials Wrong Email and Wrong Password (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1099000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "Admin input Email as \"admin@gmail.com\" and Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 878000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 641000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.No customer account found\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 3027000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;unsuccessful-login-with-invalid-credentials-wrong-email-and-wrong-password-(negative)",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "UnSuccessful Login with Invalid Credentials Wrong Email and Wrong Password (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1872000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "Admin input Email as \"admin@gmail.com\" and Password as \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 944000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 726000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.No customer account found\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 3033000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;unsuccessful-login-without-inputing-anything-(negative)",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "UnSuccessful Login Without inputing anything (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 805000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "Admin does NOT input anything on Email field and Password field",
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Email error message \"Please enter your email\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 3019000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;unsuccessful-login-by-inputing-valid-email-but-without-inputing-password-(negative)",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "UnSuccessful Login by Inputing Valid Email but without inputing password (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1879000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "Admin input Email as \"admin@yourstore.com\" and does NOT input Password",
+            "result": {
+              "status": "passed",
+              "duration": 823000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 701000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 3034000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;unsuccessful-login-without-inputing-email-but-inputing-valid-password-(negative)",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "UnSuccessful Login without inputing Email but inputing Valid password (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1180000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "Admin does NOT input Email and input Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 553000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "Email error message \"Please enter your email\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 3018000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;unsuccessful-login-by-inputing-invalid-email-and-without-inputing-password-(negative)",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "UnSuccessful Login by inputing Invalid Email and without inputing password (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 771000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "Admin input Invalid Email and does NOT input Password",
+            "result": {
+              "status": "passed",
+              "duration": 789000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 598000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.No customer account found\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 3017000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-feature-admin-demo.nopcommerce.com;unsuccessful-login-by-inputing-wrong-email-format-(negative)",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "UnSuccessful Login by inputing Wrong Email Format (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 49,
+            "name": "Admin input Wrong Email Format and input Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 810000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "Email error message \"Wrong email\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 3029000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

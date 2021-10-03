@@ -1,0 +1,31 @@
+{
+  "name": "web-ui-automation-testing-cypress-cucumber-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:test": "npx cypress run --headed --spec 'cypress/integration/*.feature'",
+    "cy:headless": "npx cypress run --spec 'cypress/integration/*.feature'",
+    "generate:report": "node cypress/cucumber-html-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.4.1"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

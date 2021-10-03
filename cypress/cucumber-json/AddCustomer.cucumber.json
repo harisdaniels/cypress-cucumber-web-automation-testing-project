@@ -1,0 +1,762 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Add Customers page feature admin-demo.nopcommerce.com",
+    "line": 1,
+    "id": "add-customers-page-feature-admin-demo.nopcommerce.com",
+    "tags": [],
+    "uri": "AddCustomer.feature",
+    "elements": [
+      {
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;successful-add-new-customer-(positive)",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Successful Add New Customer (Positive)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1553000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 930000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 2452000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Admin can view the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Admin clicks on Side Bar Button",
+            "result": {
+              "status": "passed",
+              "duration": 3413000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Admin clicks on Customers Menu",
+            "result": {
+              "status": "passed",
+              "duration": 3388000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Admin clicks on Customers Menu Item",
+            "result": {
+              "status": "passed",
+              "duration": 5717000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "Admin clicks on Add New button",
+            "result": {
+              "status": "passed",
+              "duration": 2163000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "Admin input customer info",
+            "result": {
+              "status": "passed",
+              "duration": 6900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Admin clicks on Save button",
+            "result": {
+              "status": "passed",
+              "duration": 2413000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Admin can view confirmation message \"The new customer has been added successfully.\"",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "Admin clicks on Logout link",
+            "result": {
+              "status": "passed",
+              "duration": 4769000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Page title should be \"Your store. Login\"",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-with-registered-email-(negative)",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "UnSuccessful Add New Customer with Registered Email (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1473000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 959000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 2165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Admin can view the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Admin clicks on Side Bar Button",
+            "result": {
+              "status": "passed",
+              "duration": 3352000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Admin clicks on Customers Menu",
+            "result": {
+              "status": "passed",
+              "duration": 3348000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Admin clicks on Customers Menu Item",
+            "result": {
+              "status": "passed",
+              "duration": 5126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "Admin clicks on Add New button",
+            "result": {
+              "status": "passed",
+              "duration": 2298000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Admin input customer info with registered email \"victoria_victoria@nopCommerce.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 7527000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Admin clicks on Save button",
+            "result": {
+              "status": "passed",
+              "duration": 2868000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Admin can view Error message \"Email is already registered\"",
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "Admin clicks on Logout link",
+            "result": {
+              "status": "passed",
+              "duration": 7436000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Page title should be \"Your store. Login\"",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-without-inputing-email-(negative)",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Unsuccessful Add New Customer because Without inputing email (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 2786000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 924000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 2713000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Admin can view the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Admin clicks on Side Bar Button",
+            "result": {
+              "status": "passed",
+              "duration": 3348000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Admin clicks on Customers Menu",
+            "result": {
+              "status": "passed",
+              "duration": 3365000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Admin clicks on Customers Menu Item",
+            "result": {
+              "status": "passed",
+              "duration": 5098000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "Admin clicks on Add New button",
+            "result": {
+              "status": "passed",
+              "duration": 3455000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "Admin input customer info without inputing email",
+            "result": {
+              "status": "passed",
+              "duration": 7950000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Admin clicks on Save button",
+            "result": {
+              "status": "passed",
+              "duration": 1968000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Admin can view error message \"Valid Email is required for customer to be in 'Registered' role\" and \"'Email' must not be empty.\"",
+            "result": {
+              "status": "passed",
+              "duration": 3115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "Admin clicks on Logout link",
+            "result": {
+              "status": "passed",
+              "duration": 5118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "Page title should be \"Your store. Login\"",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-inputing-wrong-email-format-(negative)",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Unsuccessful Add New Customer because inputing Wrong email Format (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1076000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 929000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 1894000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Admin can view the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Admin clicks on Side Bar Button",
+            "result": {
+              "status": "passed",
+              "duration": 3354000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Admin clicks on Customers Menu",
+            "result": {
+              "status": "passed",
+              "duration": 3399000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Admin clicks on Customers Menu Item",
+            "result": {
+              "status": "passed",
+              "duration": 4719000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "Admin clicks on Add New button",
+            "result": {
+              "status": "passed",
+              "duration": 1972000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "Admin input customer info with inputing Wrong email format",
+            "result": {
+              "status": "passed",
+              "duration": 6461000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Admin clicks on Save button",
+            "result": {
+              "status": "passed",
+              "duration": 571000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "Admin can view Error message \"Please enter a valid email address.\"",
+            "result": {
+              "status": "passed",
+              "duration": 202000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "Admin clicks on Logout link",
+            "result": {
+              "status": "passed",
+              "duration": 5177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "Page title should be \"Your store. Login\"",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-selecting-wrong-customer-role-(negative)",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Unsuccessful Add New Customer because selecting Wrong Customer Role (Negative)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 862000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 2024000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Admin can view the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Admin clicks on Side Bar Button",
+            "result": {
+              "status": "passed",
+              "duration": 3354000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Admin clicks on Customers Menu",
+            "result": {
+              "status": "passed",
+              "duration": 3358000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Admin clicks on Customers Menu Item",
+            "result": {
+              "status": "passed",
+              "duration": 4858000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "Admin clicks on Add New button",
+            "result": {
+              "status": "passed",
+              "duration": 1891000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "Admin input customer info with Wrong Customer Role",
+            "result": {
+              "status": "passed",
+              "duration": 7270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "Admin clicks on Save button",
+            "result": {
+              "status": "passed",
+              "duration": 2350000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "Admin can view Error message \"Add the customer to 'Guests' or 'Registered' customer role\"",
+            "result": {
+              "status": "passed",
+              "duration": 56000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "Admin clicks on Logout link",
+            "result": {
+              "status": "passed",
+              "duration": 4841000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "Page title should be \"Your store. Login\"",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
