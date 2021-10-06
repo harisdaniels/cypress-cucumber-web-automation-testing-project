@@ -60,8 +60,6 @@ And("Admin clicks on Search button", () => {
 });
 
 Then("Admin should find Email in the Search table", () => {
-    // const status = customers.searchCustomerByEmail("brenda_lindgren@nopCommerce.com");
-    // expect(status).to.be.true;
     
     cy.get(".odd > :nth-child(2)").should(($email) => {
         const email = $email.text();
@@ -85,8 +83,6 @@ And("Admin clicks on Search button", () => {
 });
 
 Then("Admin should find their Name in the Search table", () => {
-    // const status = customers.searchCustomerByName("Arthur", "Holmes");
-    // assert.equal(status, true);
     
     cy.get(".odd > :nth-child(3)").should(($name) => {
         const name = $name.text();

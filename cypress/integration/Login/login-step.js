@@ -100,7 +100,7 @@ When("Admin input Invalid Email and does NOT input Password", () => {
 });
 
 // Negative (Admin input Wrong Email Format input Password)
-When("Admin input Wrong Email Format and input Password as {string}", (password) => {
+When("Admin input Wrong Email Format but input Valid Password as {string}", (password) => {
     const wrongEmailFormat = generate.generateString();
     login.clearEmailField();
     login.fillEmail(wrongEmailFormat);

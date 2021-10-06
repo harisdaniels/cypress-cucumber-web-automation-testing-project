@@ -46,6 +46,6 @@ Feature: Login page feature admin-demo.nopcommerce.com
     Then Error message "Login was unsuccessful. Please correct the errors and try again.No customer account found" should be displayed
 
   Scenario: UnSuccessful Login by inputing Wrong Email Format (Negative)
-    When Admin input Wrong Email Format and input Password as "admin"
+    When Admin input Wrong Email Format but input Valid Password as "admin"
     And Admin clicks Checkbox also clicks on Login button
     Then Email error message "Wrong email" should be displayed
