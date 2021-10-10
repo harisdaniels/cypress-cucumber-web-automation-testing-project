@@ -15,10 +15,10 @@ The cypress-cucumber-preprocessor adds support for using feature files when test
 ### Multiple Cucumber HTML Reporter
 Multiple Cucumber HTML Reporter is a reporting module for Cucumber to parse the JSON output to a beautiful report. 
 The difference between all the other reporting modules on the market is that this module has:
-- a quick overview of all tested features and scenarios
-- a features overview that can hold multiple runs of the same feature / runs of the same feature on different browsers / devices
-- a features overview that can be searched / filtered / sorted
-- a feature(s) overview with metadata of the used browser(s) / devices
+- A quick overview of all tested features and scenarios
+- A features overview that can hold multiple runs of the same feature / runs of the same feature on different browsers / devices
+- A features overview that can be searched / filtered / sorted
+- A feature(s) overview with metadata of the used browser(s) / devices
 
 ## Preparation
 - Clone from this repo https://github.com/harisdaniels/cypress-cucumber-web-automation-testing-project.git. 
@@ -31,16 +31,17 @@ For windows and mac, you can [download node](https://nodejs.org/en/) and install
 ### Package Installation
 Before start development and running the test you need to install packages that needed for this simple project. To install them, you need to do these step:
 
-- Go to your project repo directory in your local machine with your favorite terminal.
-- and type `npm install` in your terminal and press ENTER on your keyboard to install all dependecies
-- wait, and done
+- Go to your project repo directory in your local machine.
+- Open your terminal or Git Bash (if you have this)
+- Type `npm install` in your terminal and press ENTER on your keyboard to install all dependecies
+- Wait, and done
 
 ### How to Organize the Test
 To learn to organize the test completely, you can learn from [here](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
 
 ## Test Structure
 - Use Gherkin syntax: a set of special [keywords](https://cucumber.io/docs/gherkin/reference/#keywords) to give structure and meaning to executable specifications.
-  Each keyword is translated to many spoken languages; in this reference we’ll use English.
+  Each keyword is translated to many spoken languages; in this reference, Gherkin use English.
   Either spaces or tabs may be used for indentation. The recommended indentation level is two spaces. Here is an example:
   
   ```
