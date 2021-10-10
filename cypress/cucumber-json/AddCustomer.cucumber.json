@@ -22,7 +22,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 2806000000
+              "duration": 12199000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 1003000000
+              "duration": 968000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 11225000000
+              "duration": 10620000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Admin can view the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 20000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "Admin clicks on Side Bar Button",
             "result": {
               "status": "passed",
-              "duration": 3389000000
+              "duration": 3367000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "Admin clicks on Customers Menu",
             "result": {
               "status": "passed",
-              "duration": 3315000000
+              "duration": 3393000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "Admin clicks on Customers Menu Item",
             "result": {
               "status": "passed",
-              "duration": 7555000000
+              "duration": 5370000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "Admin clicks on Add New button",
             "result": {
               "status": "passed",
-              "duration": 3980000000
+              "duration": 5123000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 19000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "Admin input customer info",
             "result": {
               "status": "passed",
-              "duration": 7246000000
+              "duration": 6914000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "Admin clicks on Save button",
             "result": {
               "status": "passed",
-              "duration": 4952000000
+              "duration": 2464000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "Admin can view confirmation message \"The new customer has been added successfully.\"",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 52000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 6359000000
+              "duration": 4819000000
             }
           },
           {
@@ -152,16 +152,16 @@
             "name": "Page title should be \"Your store. Login\"",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 14000000
             }
           }
         ]
       },
       {
-        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-with-registered-email-(negative)",
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-email-is-already-registered-(negative)",
         "keyword": "Scenario",
         "line": 30,
-        "name": "UnSuccessful Add New Customer with Registered Email (Negative)",
+        "name": "UnSuccessful Add New Customer because email is already REGISTERED (Negative)",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -172,7 +172,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1200000000
+              "duration": 1181000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 954000000
+              "duration": 930000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 3630000000
+              "duration": 2155000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "Admin can view the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 18000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "Admin clicks on Side Bar Button",
             "result": {
               "status": "passed",
-              "duration": 3383000000
+              "duration": 3365000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "Admin clicks on Customers Menu",
             "result": {
               "status": "passed",
-              "duration": 3433000000
+              "duration": 3362000000
             }
           },
           {
@@ -232,7 +232,7 @@
             "name": "Admin clicks on Customers Menu Item",
             "result": {
               "status": "passed",
-              "duration": 5026000000
+              "duration": 4605000000
             }
           },
           {
@@ -242,7 +242,7 @@
             "name": "Admin clicks on Add New button",
             "result": {
               "status": "passed",
-              "duration": 2534000000
+              "duration": 2015000000
             }
           },
           {
@@ -252,7 +252,7 @@
             "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 25000000
             }
           },
           {
@@ -262,7 +262,7 @@
             "name": "Admin input customer info with registered email \"victoria_victoria@nopCommerce.com\"",
             "result": {
               "status": "passed",
-              "duration": 8334000000
+              "duration": 8515000000
             }
           },
           {
@@ -272,7 +272,7 @@
             "name": "Admin clicks on Save button",
             "result": {
               "status": "passed",
-              "duration": 1684000000
+              "duration": 1840000000
             }
           },
           {
@@ -282,7 +282,7 @@
             "name": "Admin can view Error message \"Email is already registered\"",
             "result": {
               "status": "passed",
-              "duration": 51000000
+              "duration": 74000000
             }
           },
           {
@@ -292,7 +292,7 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 5022000000
+              "duration": 5552000000
             }
           },
           {
@@ -302,16 +302,16 @@
             "name": "Page title should be \"Your store. Login\"",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 14000000
             }
           }
         ]
       },
       {
-        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-without-inputing-email-(negative)",
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-admin-does-not-input-email-(negative)",
         "keyword": "Scenario",
         "line": 32,
-        "name": "Unsuccessful Add New Customer because Without inputing email (Negative)",
+        "name": "Unsuccessful Add New Customer because admin does NOT input email (Negative)",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -322,7 +322,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 2440000000
+              "duration": 1163000000
             }
           },
           {
@@ -332,7 +332,7 @@
             "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 918000000
+              "duration": 916000000
             }
           },
           {
@@ -342,7 +342,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 4035000000
+              "duration": 3471000000
             }
           },
           {
@@ -352,7 +352,7 @@
             "name": "Admin can view the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 35000000
             }
           },
           {
@@ -362,7 +362,7 @@
             "name": "Admin clicks on Side Bar Button",
             "result": {
               "status": "passed",
-              "duration": 3395000000
+              "duration": 3413000000
             }
           },
           {
@@ -372,7 +372,7 @@
             "name": "Admin clicks on Customers Menu",
             "result": {
               "status": "passed",
-              "duration": 3489000000
+              "duration": 3365000000
             }
           },
           {
@@ -382,7 +382,7 @@
             "name": "Admin clicks on Customers Menu Item",
             "result": {
               "status": "passed",
-              "duration": 4648000000
+              "duration": 4631000000
             }
           },
           {
@@ -392,7 +392,7 @@
             "name": "Admin clicks on Add New button",
             "result": {
               "status": "passed",
-              "duration": 3830000000
+              "duration": 1943000000
             }
           },
           {
@@ -402,7 +402,7 @@
             "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 25000000
             }
           },
           {
@@ -412,7 +412,7 @@
             "name": "Admin input customer info without inputing email",
             "result": {
               "status": "passed",
-              "duration": 6300000000
+              "duration": 6134000000
             }
           },
           {
@@ -422,7 +422,7 @@
             "name": "Admin clicks on Save button",
             "result": {
               "status": "passed",
-              "duration": 1914000000
+              "duration": 1790000000
             }
           },
           {
@@ -432,7 +432,7 @@
             "name": "Admin can view error message \"Valid Email is required for customer to be in 'Registered' role\" and \"'Email' must not be empty.\"",
             "result": {
               "status": "passed",
-              "duration": 3110000000
+              "duration": 3116000000
             }
           },
           {
@@ -442,7 +442,7 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 5970000000
+              "duration": 5077000000
             }
           },
           {
@@ -452,16 +452,16 @@
             "name": "Page title should be \"Your store. Login\"",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 17000000
             }
           }
         ]
       },
       {
-        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-inputing-wrong-email-format-(negative)",
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-admin-inputs-wrong-email-format-(negative)",
         "keyword": "Scenario",
         "line": 39,
-        "name": "Unsuccessful Add New Customer because inputing Wrong email Format (Negative)",
+        "name": "Unsuccessful Add New Customer because admin inputs WRONG email Format (Negative)",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -472,7 +472,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1363000000
+              "duration": 1876000000
             }
           },
           {
@@ -482,7 +482,7 @@
             "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 978000000
+              "duration": 992000000
             }
           },
           {
@@ -492,7 +492,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 3230000000
+              "duration": 2148000000
             }
           },
           {
@@ -502,7 +502,7 @@
             "name": "Admin can view the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 18000000
             }
           },
           {
@@ -512,7 +512,7 @@
             "name": "Admin clicks on Side Bar Button",
             "result": {
               "status": "passed",
-              "duration": 3391000000
+              "duration": 3349000000
             }
           },
           {
@@ -522,7 +522,7 @@
             "name": "Admin clicks on Customers Menu",
             "result": {
               "status": "passed",
-              "duration": 3355000000
+              "duration": 3384000000
             }
           },
           {
@@ -532,7 +532,7 @@
             "name": "Admin clicks on Customers Menu Item",
             "result": {
               "status": "passed",
-              "duration": 4787000000
+              "duration": 4990000000
             }
           },
           {
@@ -542,7 +542,7 @@
             "name": "Admin clicks on Add New button",
             "result": {
               "status": "passed",
-              "duration": 1915000000
+              "duration": 3297000000
             }
           },
           {
@@ -552,7 +552,7 @@
             "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 165000000
             }
           },
           {
@@ -562,7 +562,7 @@
             "name": "Admin input customer info with inputing Wrong email format",
             "result": {
               "status": "passed",
-              "duration": 6648000000
+              "duration": 6506000000
             }
           },
           {
@@ -572,7 +572,7 @@
             "name": "Admin clicks on Save button",
             "result": {
               "status": "passed",
-              "duration": 335000000
+              "duration": 340000000
             }
           },
           {
@@ -582,7 +582,7 @@
             "name": "Admin can view Error message \"Please enter a valid email address.\"",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 66000000
             }
           },
           {
@@ -592,7 +592,7 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 5373000000
+              "duration": 5060000000
             }
           },
           {
@@ -602,16 +602,16 @@
             "name": "Page title should be \"Your store. Login\"",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 14000000
             }
           }
         ]
       },
       {
-        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-selecting-wrong-customer-role-(negative)",
+        "id": "add-customers-page-feature-admin-demo.nopcommerce.com;unsuccessful-add-new-customer-because-admin-selects-wrong-customer-role-(negative)",
         "keyword": "Scenario",
         "line": 46,
-        "name": "Unsuccessful Add New Customer because selecting Wrong Customer Role (Negative)",
+        "name": "Unsuccessful Add New Customer because admin selects WRONG Customer Role (Negative)",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -622,7 +622,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1371000000
+              "duration": 1507000000
             }
           },
           {
@@ -632,7 +632,7 @@
             "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 942000000
+              "duration": 894000000
             }
           },
           {
@@ -642,7 +642,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 3299000000
+              "duration": 1791000000
             }
           },
           {
@@ -652,7 +652,7 @@
             "name": "Admin can view the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 25000000
             }
           },
           {
@@ -662,7 +662,7 @@
             "name": "Admin clicks on Side Bar Button",
             "result": {
               "status": "passed",
-              "duration": 3488000000
+              "duration": 3371000000
             }
           },
           {
@@ -672,7 +672,7 @@
             "name": "Admin clicks on Customers Menu",
             "result": {
               "status": "passed",
-              "duration": 3338000000
+              "duration": 3352000000
             }
           },
           {
@@ -682,7 +682,7 @@
             "name": "Admin clicks on Customers Menu Item",
             "result": {
               "status": "passed",
-              "duration": 4612000000
+              "duration": 4708000000
             }
           },
           {
@@ -692,7 +692,7 @@
             "name": "Admin clicks on Add New button",
             "result": {
               "status": "passed",
-              "duration": 1980000000
+              "duration": 1878000000
             }
           },
           {
@@ -702,7 +702,7 @@
             "name": "Admin can view \"Add a new customer / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 22000000
             }
           },
           {
@@ -712,7 +712,7 @@
             "name": "Admin input customer info with Wrong Customer Role",
             "result": {
               "status": "passed",
-              "duration": 6822000000
+              "duration": 7323000000
             }
           },
           {
@@ -722,7 +722,7 @@
             "name": "Admin clicks on Save button",
             "result": {
               "status": "passed",
-              "duration": 1728000000
+              "duration": 2181000000
             }
           },
           {
@@ -732,7 +732,7 @@
             "name": "Admin can view Error message \"Add the customer to 'Guests' or 'Registered' customer role\"",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 149000000
             }
           },
           {
@@ -742,7 +742,7 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 4879000000
+              "duration": 4882000000
             }
           },
           {
@@ -752,7 +752,7 @@
             "name": "Page title should be \"Your store. Login\"",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 16000000
             }
           }
         ]
