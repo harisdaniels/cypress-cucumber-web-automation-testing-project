@@ -55,6 +55,29 @@ When("Admin input Customer Email", () => {
     customers.searchByEmail("brenda_lindgren@nopCommerce.com")
 });
 
+// Search Customer By Name
+When("Admin input Customer First Name", () => {
+    customers.searchByFirstName("Arthur")
+});
+
+And("Admin input Customer Last Name", () => {
+    customers.searchByLastName("Holmes");
+});
+
+// Search Customer by Unavailable Email Negative Testing
+When("Admin input Customer Unavailable Email {string}", (unavailableEmail) => {
+    customers.searchByEmail(unavailableEmail);
+});
+
+// Search Customer by Unavailable Name Negative Testing
+When("Admin input Customer First Name {string}", (firstName) => {
+    customers.searchByFirstName(firstName)
+});
+
+And("Admin input Customer Last Name {string}", (lastName) => {
+    customers.searchByLastName(lastName);
+});
+
 And("Admin clicks on Search button", () => {
     customers.clickSearchCustomerButton();
 });
@@ -68,20 +91,6 @@ Then("Admin should find Email in the Search table", () => {
     cy.wait(3000);
 });
 
-
-// Search Customer By Name
-When("Admin input Customer First Name", () => {
-    customers.searchByFirstName("Arthur")
-});
-
-And("Admin input Customer Last Name", () => {
-    customers.searchByLastName("Holmes");
-});
-
-And("Admin clicks on Search button", () => {
-    customers.clickSearchCustomerButton();
-});
-
 Then("Admin should find their Name in the Search table", () => {
     
     cy.get(".odd > :nth-child(3)").should(($name) => {
@@ -91,27 +100,12 @@ Then("Admin should find their Name in the Search table", () => {
     cy.wait(3000);
 });
 
-// Search Customer by Unavailable Email Negative Testing
-When("Admin input Customer Unavailable Email {string}", (unavailableEmail) => {
-    customers.searchByEmail(unavailableEmail);
-});
-
 Then("{string} message should be displayed", (noDataAvailable) => {
     cy.get("#customers-grid > tbody > tr > td").should(($noData) => {
         const noData = $noData.text();
         expect(noData).to.equal(noDataAvailable);
     });
     cy.wait(3000);
-});
-
-
-// Search Customer by Unavailable Name Negative Testing
-When("Admin input Customer First Name {string}", (firstName) => {
-    customers.searchByFirstName(firstName)
-});
-
-And("Admin input Customer Last Name {string}", (lastName) => {
-    customers.searchByLastName(lastName);
 });
 
 // Logout

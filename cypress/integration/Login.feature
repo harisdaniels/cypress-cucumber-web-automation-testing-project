@@ -3,49 +3,49 @@ Feature: Login page feature admin-demo.nopcommerce.com
   Background: Steps to Login Page
     Given Admin opens URL "https://admin-demo.nopcommerce.com/login"
 
-  Scenario: Successful Login because admin inputs Valid Credentials (Positive)
-    When Admin input Email as "admin@yourstore.com" and Password as "admin"
+  Scenario: Successful Login Because Admin Inputs Valid Credentials (Positive)
+    When Admin inputs Email as "admin@yourstore.com" and Password as "admin"
     And Admin clicks Checkbox also clicks on Login button
     Then Page title should be "Dashboard / nopCommerce administration"
     When Admin clicks on Logout link
     Then Page title should be "Your store. Login"
 
-  Scenario: UnSuccessful Login because admin inputs Invalid Password (Negative)
-    When Admin input Email as "admin@yourstore.com" and Password as "invalidpassword"
+  Scenario: Unsuccessful Login Because Admin Inputs Invalid Password (Negative)
+    When Admin inputs Email as "admin@yourstore.com" and Password as "invalidpassword"
     And Admin clicks Checkbox also clicks on Login button
     Then Error message "Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect" should be displayed
 
-  Scenario Outline: UnSuccessful Login because admin inputs Invalid Credentials Wrong Email and Wrong Password (Negative)
-    When Admin input Email as "<email>" and Password as "<password>"
+  Scenario Outline: Unsuccessful Login Because Admin Inputs Invalid Credentials Wrong Email and Wrong Password (Negative)
+    When Admin inputs Email as "<email>" and Password as "<password>"
     And Admin clicks Checkbox also clicks on Login button
     Then Error message "Login was unsuccessful. Please correct the errors and try again.No customer account found" should be displayed
 
     Examples: 
       | email                | password |
-      | admin@gmail.com      | admin    |
+      | admin@yourstore      | admin    |
       | admin@gmail.com      | admin123 |
+  
+  Scenario: Unsuccessful Login Because Admin Inputs Valid Email But Does NOT Input password (Negative)
+    When Admin inputs Email as "admin@yourstore.com" and does NOT input Password
+    And Admin clicks Checkbox also clicks on Login button
+    Then Error message "Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect" should be displayed
 
-  Scenario: UnSuccessful Login because admin inputs does NOT input anything (Negative)
+  Scenario: Unsuccessful Login Because Admin Inputs Invalid Email And Does NOT Input Password (Negative)
+    When Admin inputs invalid Email and does NOT input Password
+    And Admin clicks Checkbox also clicks on Login button
+    Then Error message "Login was unsuccessful. Please correct the errors and try again.No customer account found" should be displayed
+
+  Scenario: Unsuccessful Login Because Admin Inputs Does NOT Input Anything (Negative)
     When Admin does NOT input anything on Email field and Password field
     And Admin clicks Checkbox also clicks on Login button
     Then Email error message "Please enter your email" should be displayed
 
-  Scenario: UnSuccessful Login because admin inputs Valid Email but does NOT inputs password (Negative)
-    When Admin input Email as "admin@yourstore.com" and does NOT input Password
-    And Admin clicks Checkbox also clicks on Login button
-    Then Error message "Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect" should be displayed
-
-  Scenario: UnSuccessful Login because admin does NOT input Email but input Valid password (Negative)
+  Scenario: Unsuccessful Login Because Admin Does NOT Input Email But Input Valid password (Negative)
     When Admin does NOT input Email and input Password as "admin"
     And Admin clicks Checkbox also clicks on Login button
     Then Email error message "Please enter your email" should be displayed
-    
-  Scenario: UnSuccessful Login because admin inputs Invalid Email and does NOT input password (Negative)
-    When Admin input Invalid Email and does NOT input Password
-    And Admin clicks Checkbox also clicks on Login button
-    Then Error message "Login was unsuccessful. Please correct the errors and try again.No customer account found" should be displayed
 
-  Scenario: UnSuccessful Login by because admin inputs WRONG Email Format (Negative)
-    When Admin input Wrong Email Format but input Valid Password as "admin"
+  Scenario: Unsuccessful Login Because Admin Inputs WRONG Email Format (Negative)
+    When Admin inputs wrong Email format but input valid Password as "admin"
     And Admin clicks Checkbox also clicks on Login button
     Then Email error message "Wrong email" should be displayed

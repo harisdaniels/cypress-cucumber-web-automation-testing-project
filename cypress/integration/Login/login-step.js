@@ -12,7 +12,7 @@ Given("Admin opens URL {string}", (url) => {
     login.visitWebsite(url);
 });
 
-When("Admin input Email as {string} and Password as {string}", (email, password) => {
+When("Admin inputs Email as {string} and Password as {string}", (email, password) => {
     login.clearEmailField();
     login.fillEmail(email);
 
@@ -25,34 +25,66 @@ And("Admin clicks Checkbox also clicks on Login button", () => {
     login.clickLoginButton();
 });
 
-Then("Page title should be {string}", (expectedTitle) => {
-    cy.title().should('eq', expectedTitle);
-    cy.wait(3000);
-});
-
 // Logout
 When("Admin clicks on Logout link", () => {
     cy.get(".navbar-nav > :nth-child(3) > .nav-link").click();
 });
 
-Then("Page title should be {string}", (expectedTitle) => {
-    cy.title().should('eq', expectedTitle);
+// Negative (Admin enters Email and does NOT input Password)
+When("Admin inputs Email as {string} and does NOT input Password", (email) => {
+    login.clearEmailField();
+    login.fillEmail(email);
+
+    login.clearPasswordField();
 });
 
+// Negative (Admin input Invalid Email and does NOT input Password)
+When("Admin inputs invalid Email and does NOT input Password", () => {
+    const invalidEmail = generate.generateEmail();
 
-// Negative
-Then("Error message {string} should be displayed", (expectedErrorMessage) => {
-    cy.get(".message-error").should(($messageError) => {
-        const actualErrorMessage = $messageError.text();
-        expect(actualErrorMessage).to.contain(expectedErrorMessage);
-    });
-    cy.wait(3000);
+    login.clearEmailField();
+    login.fillEmail(invalidEmail);
+
+    login.clearPasswordField();
 });
 
 // Negative (Without input anything)
 When("Admin does NOT input anything on Email field and Password field", () => {
     login.clearEmailField();
     login.clearPasswordField();
+});
+
+// Negative (Admin does NOT input Email but input Password )
+When("Admin does NOT input Email and input Password as {string}", (password) => {
+    login.clearEmailField();
+
+    login.clearPasswordField();
+    login.fillPassword(password);
+});
+
+// Negative (Admin input Wrong Email Format input Password)
+When("Admin inputs wrong Email format but input valid Password as {string}", (password) => {
+    const wrongEmailFormat = generate.generateString();
+    login.clearEmailField();
+    login.fillEmail(wrongEmailFormat);
+
+    login.clearPasswordField();
+    login.fillPassword(password);
+});
+
+Then("Page title should be {string}", (expectedTitle) => {
+    cy.title().should('eq', expectedTitle);
+    cy.wait(3000);
+});
+
+// Negative
+Then("Error message {string} should be displayed", (expectedErrorMessage) => {
+    cy.get(".message-error").should(($messageError) => {
+        let errorMessage = $messageError.text();
+        let actualErrorMessage = errorMessage.replace("\n", "");
+        expect(actualErrorMessage).to.equal(expectedErrorMessage);
+    });
+    cy.wait(3000);
 });
 
 Then("Email error message {string} should be displayed", (expectedEmailError) => {
@@ -71,40 +103,4 @@ Then("Email error message {string} should be displayed", (expectedEmailError) =>
         cy.wait(3000);
     });
     */
-});
-
-// Negative (Admin enters Email and does NOT input Password)
-When("Admin input Email as {string} and does NOT input Password", (email) => {
-    login.clearEmailField();
-    login.fillEmail(email);
-
-    login.clearPasswordField();
-});
-
-// Negative (Admin does NOT input Email but input Password )
-When("Admin does NOT input Email and input Password as {string}", (password) => {
-    login.clearEmailField();
-
-    login.clearPasswordField();
-    login.fillPassword(password);
-});
-
-// Negative (Admin input Invalid Email and does NOT input Password)
-When("Admin input Invalid Email and does NOT input Password", () => {
-    const invalidEmail = generate.generateEmail();
-
-    login.clearEmailField();
-    login.fillEmail(invalidEmail);
-
-    login.clearPasswordField();
-});
-
-// Negative (Admin input Wrong Email Format input Password)
-When("Admin input Wrong Email Format but input Valid Password as {string}", (password) => {
-    const wrongEmailFormat = generate.generateString();
-    login.clearEmailField();
-    login.fillEmail(wrongEmailFormat);
-
-    login.clearPasswordField();
-    login.fillPassword(password);
 });

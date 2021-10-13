@@ -77,17 +77,6 @@ When("Admin input customer info", () => {
     addCustomer.inputAdminComment("This is for testing");
 });
 
-And("Admin clicks on Save button", () => {
-    addCustomer.clickSaveButton();
-});
-
-Then("Admin can view confirmation message {string}", (expectedAlert) => {
-    cy.get('.alert').should(($alert) => {
-        const actualAlert = $alert.text().trim();
-        expect(actualAlert).to.contain(expectedAlert);
-    });
-});
-
 // UnSuccessful Add New Customer with Registered Email
 When("Admin input customer info with registered email {string}", (email) => {
     addCustomer.inputEmail(email);
@@ -104,13 +93,6 @@ When("Admin input customer info with registered email {string}", (email) => {
     addCustomer.inputAdminComment("This is for testing");
 });
 
-Then("Admin can view Error message {string}", (expectedAlert) => {
-    cy.get(".validation-summary-errors > ul > li").should(($validationSummaryError) => {
-        const actualAlert = $validationSummaryError.text();
-        expect(actualAlert).to.equal(expectedAlert);
-    });
-});
-
 // Unsuccessful Add New Customer because Without input email
 When("Admin input customer info without inputing email", () => {
     addCustomer.inputPassword("victoria123");
@@ -124,19 +106,6 @@ When("Admin input customer info without inputing email", () => {
     addCustomer.selectNewsLetter("your store name");
     addCustomer.selectVendor("veNdOr 2");
     addCustomer.inputAdminComment("This is for testing");
-});
-
-Then("Admin can view error message {string} and {string}", (expectedAlert, expectedErrorMessage) => {
-    cy.get(".alert").should(($alertError) => {
-        const actualAlert = $alertError.text().trim();
-        expect(actualAlert).to.contain(expectedAlert);
-    });
-
-    cy.get(".field-validation-error").should(($messageError) => {
-        const actualErrorMessage = $messageError.text();
-        expect(actualErrorMessage).to.equal(expectedErrorMessage);
-    });
-    cy.wait(3000);
 });
 
 // Unsuccessful Add New Customer because input Invalid email
@@ -173,6 +142,36 @@ When("Admin input customer info with Wrong Customer Role", () => {
     addCustomer.inputAdminComment("This is for testing");
 });
 
+And("Admin clicks on Save button", () => {
+    addCustomer.clickSaveButton();
+});
+
+Then("Admin can view confirmation message {string}", (expectedAlert) => {
+    cy.get('.alert').should(($alert) => {
+        const actualAlert = $alert.text().trim();
+        expect(actualAlert).to.contain(expectedAlert);
+    });
+});
+
+Then("Admin can view Error message {string}", (expectedAlert) => {
+    cy.get(".validation-summary-errors > ul > li").should(($validationSummaryError) => {
+        const actualAlert = $validationSummaryError.text();
+        expect(actualAlert).to.equal(expectedAlert);
+    });
+});
+
+Then("Admin can view error message {string} and {string}", (expectedAlert, expectedErrorMessage) => {
+    cy.get(".alert").should(($alertError) => {
+        const actualAlert = $alertError.text().trim();
+        expect(actualAlert).to.contain(expectedAlert);
+    });
+
+    cy.get(".field-validation-error").should(($messageError) => {
+        const actualErrorMessage = $messageError.text();
+        expect(actualErrorMessage).to.equal(expectedErrorMessage);
+    });
+    cy.wait(3000);
+});
 
 // Logout
 When("Admin clicks on Logout link", () => {

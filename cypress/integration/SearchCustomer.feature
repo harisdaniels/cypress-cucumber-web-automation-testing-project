@@ -10,14 +10,14 @@ Feature: Customers page feature admin-demo.nopcommerce.com
     And Clicks on Customers Menu Item
     Then Admin can view "Customers / nopCommerce administration" page
 
-  Scenario: Successful Search Customer by Email because data is available (Positive)
+  Scenario: Successful Search Customer by Email because data is Available (Positive)
     When Admin input Customer Email
     And Admin clicks on Search button
     Then Admin should find Email in the Search table
     When Admin clicks on Logout link
     Then Page title should be "Your store. Login"
 
-  Scenario: Successful Search Customer by Name because data is available (Positive)
+  Scenario: Successful Search Customer By Name Because Data Is Available (Positive)
     When Admin input Customer First Name
     And Admin input Customer Last Name
     And Admin clicks on Search button
@@ -25,7 +25,7 @@ Feature: Customers page feature admin-demo.nopcommerce.com
     When Admin clicks on Logout link
     Then Page title should be "Your store. Login"
 
-  Scenario Outline: UnSuccessful Search Customer by Email because data is unavailable (Negative)
+  Scenario Outline: Unsuccessful Search Customer By Email Because Data Is Unavailable (Negative)
     When Admin input Customer Unavailable Email "<email>"
     And Admin clicks on Search button
     Then "No data available in table" message should be displayed
@@ -36,7 +36,7 @@ Feature: Customers page feature admin-demo.nopcommerce.com
       | email                |
       | nodata@gmail.com     |
 
-  Scenario Outline: UnSuccessful Search Customer by Name because data is unavailable (Negative)
+  Scenario Outline: Unsuccessful Search Customer By Name Because Data Is Unavailable (Negative)
     When Admin input Customer First Name "<firstname>"
     And Admin input Customer Last Name "<lastname>"
     And Admin clicks on Search button

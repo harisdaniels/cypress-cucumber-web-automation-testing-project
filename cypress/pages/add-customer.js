@@ -33,9 +33,9 @@ class AddCustomer {
 
     chooseGender(gender) {
         if(gender.toLowerCase() === "Male".toLowerCase()) {
-			cy.get("input[id='Gender_Male']").click();
+            cy.get("input[id='Gender_Male']").click();
 		}
-		else if(gender.toLowerCase() === "Female".toLowerCase()) {
+		else if (gender.toLowerCase() === "Female".toLowerCase()) {
 			cy.get("input[id='Gender_Female']").click();
 		} else {
             cy.get("input[id='Gender_Male']").click();
