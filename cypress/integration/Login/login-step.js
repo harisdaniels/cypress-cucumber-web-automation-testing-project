@@ -72,9 +72,8 @@ When("Admin inputs wrong Email format but input valid Password as {string}", (pa
     login.fillPassword(password);
 });
 
-Then("Page title should be {string}", (expectedTitle) => {
+Then("Admin can view {string} page", (expectedTitle) => {
     cy.title().should('eq', expectedTitle);
-    cy.wait(3000);
 });
 
 // Negative

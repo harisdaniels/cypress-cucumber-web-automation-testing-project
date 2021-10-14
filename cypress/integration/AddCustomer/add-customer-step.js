@@ -20,7 +20,7 @@ Given("Admin opens URL {string}", (url) => {
     login.visitWebsite(url);
 });
 
-When("Admin input Email as {string} and Password as {string}", (email, password) => {
+When("Admin inputs Email as {string} and Password as {string}", (email, password) => {
     login.clearEmailField();
     login.fillEmail(email);
 
@@ -31,10 +31,6 @@ When("Admin input Email as {string} and Password as {string}", (email, password)
 And("Admin clicks Checkbox also clicks on Login button", () => {
     login.clickRememberMeCheckBox();
     login.clickLoginButton();
-});
-
-Then("Admin can view the Dashboard", () => {
-    cy.title().should('eq', "Dashboard / nopCommerce administration");
 });
 
 When("Admin clicks on Side Bar Button", () => {
@@ -61,7 +57,7 @@ Then("Admin can view {string} page", (expectedTitle) => {
 });
 
 // Successful Add New Customer
-When("Admin input customer info", () => {
+When("Admin inputs customer info", () => {
     let email = generate.generateEmail();
     addCustomer.inputEmail(email);
     addCustomer.inputPassword("test123");
@@ -78,7 +74,7 @@ When("Admin input customer info", () => {
 });
 
 // UnSuccessful Add New Customer with Registered Email
-When("Admin input customer info with registered email {string}", (email) => {
+When("Admin inputs customer info with registered email {string}", (email) => {
     addCustomer.inputEmail(email);
     addCustomer.inputPassword("victoria123");
     addCustomer.inputFirstName("Victoria");
@@ -94,7 +90,7 @@ When("Admin input customer info with registered email {string}", (email) => {
 });
 
 // Unsuccessful Add New Customer because Without input email
-When("Admin input customer info without inputing email", () => {
+When("Admin inputs customer info without inputing email", () => {
     addCustomer.inputPassword("victoria123");
     addCustomer.inputFirstName("Victoria");
     addCustomer.inputLastName("Terces");
@@ -109,7 +105,7 @@ When("Admin input customer info without inputing email", () => {
 });
 
 // Unsuccessful Add New Customer because input Invalid email
-When("Admin input customer info with inputing Wrong email format", () => {
+When("Admin inputs customer info with inputing Wrong email format", () => {
     let invalidEmail = generate.generateString();
     addCustomer.inputEmail(invalidEmail);
     addCustomer.inputPassword("test123");
@@ -126,7 +122,7 @@ When("Admin input customer info with inputing Wrong email format", () => {
 });
 
 // Unsuccessful Add New Customer because selecting Wrong Customer Role (Negative)
-When("Admin input customer info with Wrong Customer Role", () => {
+When("Admin inputs customer info with Wrong Customer Role", () => {
     let email = generate.generateEmail();
     addCustomer.inputEmail(email);
     addCustomer.inputPassword("test123");
@@ -148,7 +144,8 @@ And("Admin clicks on Save button", () => {
 
 Then("Admin can view confirmation message {string}", (expectedAlert) => {
     cy.get('.alert').should(($alert) => {
-        const actualAlert = $alert.text().trim();
+        let alert = $alert.text().trim();
+        const actualAlert = alert.replace("\n", " ");
         expect(actualAlert).to.contain(expectedAlert);
     });
 });
@@ -162,7 +159,8 @@ Then("Admin can view Error message {string}", (expectedAlert) => {
 
 Then("Admin can view error message {string} and {string}", (expectedAlert, expectedErrorMessage) => {
     cy.get(".alert").should(($alertError) => {
-        const actualAlert = $alertError.text().trim();
+        let alert = $alertError.text().trim();
+        const actualAlert = alert.replace("\n", " ");
         expect(actualAlert).to.contain(expectedAlert);
     });
 

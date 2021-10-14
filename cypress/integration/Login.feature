@@ -6,9 +6,9 @@ Feature: Login page feature admin-demo.nopcommerce.com
   Scenario: Successful Login Because Admin Inputs Valid Credentials (Positive)
     When Admin inputs Email as "admin@yourstore.com" and Password as "admin"
     And Admin clicks Checkbox also clicks on Login button
-    Then Page title should be "Dashboard / nopCommerce administration"
+    Then Admin can view "Dashboard / nopCommerce administration" page
     When Admin clicks on Logout link
-    Then Page title should be "Your store. Login"
+    Then Admin can view "Your store. Login" page
 
   Scenario: Unsuccessful Login Because Admin Inputs Invalid Password (Negative)
     When Admin inputs Email as "admin@yourstore.com" and Password as "invalidpassword"

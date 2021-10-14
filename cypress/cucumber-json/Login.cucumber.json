@@ -22,7 +22,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1428000000
+              "duration": 1416000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Admin inputs Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 994000000
+              "duration": 896000000
             }
           },
           {
@@ -42,17 +42,17 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 2874000000
+              "duration": 8085000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "Page title should be \"Dashboard / nopCommerce administration\"",
+            "name": "Admin can view \"Dashboard / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 3035000000
+              "duration": 27000000
             }
           },
           {
@@ -62,17 +62,17 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 1807000000
+              "duration": 1713000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "Page title should be \"Your store. Login\"",
+            "name": "Admin can view \"Your store. Login\" page",
             "result": {
               "status": "passed",
-              "duration": 3019000000
+              "duration": 18000000
             }
           }
         ]
@@ -92,7 +92,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1575000000
+              "duration": 1065000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "Admin inputs Email as \"admin@yourstore.com\" and Password as \"invalidpassword\"",
             "result": {
               "status": "passed",
-              "duration": 963000000
+              "duration": 1160000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 974000000
+              "duration": 612000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect\" should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3020000000
+              "duration": 3021000000
             }
           }
         ]
@@ -142,7 +142,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1137000000
+              "duration": 904000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "Admin inputs Email as \"admin@yourstore\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 816000000
+              "duration": 1019000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 634000000
+              "duration": 687000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.No customer account found\" should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3021000000
+              "duration": 3031000000
             }
           }
         ]
@@ -192,7 +192,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1506000000
+              "duration": 2761000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "Admin inputs Email as \"admin@gmail.com\" and Password as \"admin123\"",
             "result": {
               "status": "passed",
-              "duration": 1076000000
+              "duration": 1091000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 787000000
+              "duration": 1404000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.No customer account found\" should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3032000000
+              "duration": 3036000000
             }
           }
         ]
@@ -242,7 +242,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1182000000
+              "duration": 826000000
             }
           },
           {
@@ -252,7 +252,7 @@
             "name": "Admin inputs Email as \"admin@yourstore.com\" and does NOT input Password",
             "result": {
               "status": "passed",
-              "duration": 697000000
+              "duration": 739000000
             }
           },
           {
@@ -262,7 +262,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 630000000
+              "duration": 645000000
             }
           },
           {
@@ -272,7 +272,7 @@
             "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect\" should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3018000000
+              "duration": 3023000000
             }
           }
         ]
@@ -292,7 +292,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1110000000
+              "duration": 995000000
             }
           },
           {
@@ -302,7 +302,7 @@
             "name": "Admin inputs invalid Email and does NOT input Password",
             "result": {
               "status": "passed",
-              "duration": 698000000
+              "duration": 768000000
             }
           },
           {
@@ -312,7 +312,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 667000000
+              "duration": 615000000
             }
           },
           {
@@ -322,7 +322,7 @@
             "name": "Error message \"Login was unsuccessful. Please correct the errors and try again.No customer account found\" should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3020000000
+              "duration": 3022000000
             }
           }
         ]
@@ -342,7 +342,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1156000000
+              "duration": 751000000
             }
           },
           {
@@ -352,7 +352,7 @@
             "name": "Admin does NOT input anything on Email field and Password field",
             "result": {
               "status": "passed",
-              "duration": 389000000
+              "duration": 431000000
             }
           },
           {
@@ -362,7 +362,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 281000000
+              "duration": 284000000
             }
           },
           {
@@ -372,7 +372,7 @@
             "name": "Email error message \"Please enter your email\" should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3041000000
+              "duration": 3018000000
             }
           }
         ]
@@ -392,7 +392,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1359000000
+              "duration": 756000000
             }
           },
           {
@@ -402,7 +402,7 @@
             "name": "Admin does NOT input Email and input Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 614000000
+              "duration": 594000000
             }
           },
           {
@@ -412,7 +412,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 283000000
+              "duration": 257000000
             }
           },
           {
@@ -422,7 +422,7 @@
             "name": "Email error message \"Please enter your email\" should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3033000000
+              "duration": 3026000000
             }
           }
         ]
@@ -442,7 +442,7 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1504000000
+              "duration": 1470000000
             }
           },
           {
@@ -452,7 +452,7 @@
             "name": "Admin inputs wrong Email format but input valid Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 879000000
+              "duration": 908000000
             }
           },
           {
@@ -462,7 +462,7 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 246000000
+              "duration": 282000000
             }
           },
           {

@@ -13,7 +13,7 @@ Given("Admin opens URL {string}", (url) => {
     login.visitWebsite(url);
 });
 
-When("Admin input Email as {string} and Password as {string}", (email, password) => {
+When("Admin inputs Email as {string} and Password as {string}", (email, password) => {
     login.clearEmailField();
     login.fillEmail(email);
 
@@ -24,10 +24,6 @@ When("Admin input Email as {string} and Password as {string}", (email, password)
 And("Admin clicks Checkbox also clicks on Login button", () => {
     login.clickRememberMeCheckBox();
     login.clickLoginButton();
-});
-
-Then("Admin can view the Dashboard", () => {
-    cy.title().should('eq', "Dashboard / nopCommerce administration");
 });
 
 When("Admin clicks on Side Bar Button", () => {
@@ -51,30 +47,30 @@ Then("Admin can view {string} page", (expectedTitle) => {
 
 
 // Search Customer by Email
-When("Admin input Customer Email", () => {
+When("Admin inputs Customer Email", () => {
     customers.searchByEmail("brenda_lindgren@nopCommerce.com")
 });
 
 // Search Customer By Name
-When("Admin input Customer First Name", () => {
+When("Admin inputs Customer First Name", () => {
     customers.searchByFirstName("Arthur")
 });
 
-And("Admin input Customer Last Name", () => {
+And("Admin inputs Customer Last Name", () => {
     customers.searchByLastName("Holmes");
 });
 
 // Search Customer by Unavailable Email Negative Testing
-When("Admin input Customer Unavailable Email {string}", (unavailableEmail) => {
+When("Admin inputs Customer Unavailable Email {string}", (unavailableEmail) => {
     customers.searchByEmail(unavailableEmail);
 });
 
 // Search Customer by Unavailable Name Negative Testing
-When("Admin input Customer First Name {string}", (firstName) => {
+When("Admin inputs Customer First Name {string}", (firstName) => {
     customers.searchByFirstName(firstName)
 });
 
-And("Admin input Customer Last Name {string}", (lastName) => {
+And("Admin inputs Customer Last Name {string}", (lastName) => {
     customers.searchByLastName(lastName);
 });
 

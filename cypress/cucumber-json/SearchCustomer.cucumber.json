@@ -8,6 +8,146 @@
     "uri": "SearchCustomer.feature",
     "elements": [
       {
+        "id": "customers-page-feature-admin-demo.nopcommerce.com;successful-search-customer-by-email-because-data-is-available-(positive)",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Successful Search Customer by Email Because data is Available (Positive)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
+            "result": {
+              "status": "passed",
+              "duration": 1141000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Admin inputs Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 901000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Admin clicks Checkbox also clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 10693000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Admin can view \"Dashboard / nopCommerce administration\" page",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Admin clicks on Side Bar Button",
+            "result": {
+              "status": "passed",
+              "duration": 3361000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Admin clicks on Customers Menu",
+            "result": {
+              "status": "passed",
+              "duration": 3338000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Clicks on Customers Menu Item",
+            "result": {
+              "status": "passed",
+              "duration": 7911000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Admin can view \"Customers / nopCommerce administration\" page",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Admin inputs Customer Email",
+            "result": {
+              "status": "passed",
+              "duration": 1170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Admin clicks on Search button",
+            "result": {
+              "status": "passed",
+              "duration": 311000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Admin should find Email in the Search table",
+            "result": {
+              "status": "passed",
+              "duration": 3332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "Admin clicks on Logout link",
+            "result": {
+              "status": "passed",
+              "duration": 1704000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Page title should be \"Your store. Login\"",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
         "id": "customers-page-feature-admin-demo.nopcommerce.com;successful-search-customer-by-name-because-data-is-available-(positive)",
         "keyword": "Scenario",
         "line": 20,
@@ -22,17 +162,17 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 4268000000
+              "duration": 2031000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "name": "Admin inputs Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 913000000
+              "duration": 1057000000
             }
           },
           {
@@ -42,17 +182,17 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 1947000000
+              "duration": 4101000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Admin can view the Dashboard",
+            "name": "Admin can view \"Dashboard / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 18000000
             }
           },
           {
@@ -62,7 +202,7 @@
             "name": "Admin clicks on Side Bar Button",
             "result": {
               "status": "passed",
-              "duration": 3350000000
+              "duration": 3313000000
             }
           },
           {
@@ -72,7 +212,7 @@
             "name": "Admin clicks on Customers Menu",
             "result": {
               "status": "passed",
-              "duration": 3367000000
+              "duration": 3302000000
             }
           },
           {
@@ -82,7 +222,7 @@
             "name": "Clicks on Customers Menu Item",
             "result": {
               "status": "passed",
-              "duration": 4641000000
+              "duration": 5041000000
             }
           },
           {
@@ -92,27 +232,27 @@
             "name": "Admin can view \"Customers / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 17000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 21,
-            "name": "Admin input Customer First Name",
+            "name": "Admin inputs Customer First Name",
             "result": {
               "status": "passed",
-              "duration": 1567000000
+              "duration": 2283000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "Admin input Customer Last Name",
+            "name": "Admin inputs Customer Last Name",
             "result": {
               "status": "passed",
-              "duration": 676000000
+              "duration": 560000000
             }
           },
           {
@@ -122,7 +262,7 @@
             "name": "Admin clicks on Search button",
             "result": {
               "status": "passed",
-              "duration": 306000000
+              "duration": 277000000
             }
           },
           {
@@ -132,7 +272,7 @@
             "name": "Admin should find their Name in the Search table",
             "result": {
               "status": "passed",
-              "duration": 3473000000
+              "duration": 3420000000
             }
           },
           {
@@ -142,7 +282,7 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 2113000000
+              "duration": 2378000000
             }
           },
           {
@@ -152,7 +292,7 @@
             "name": "Page title should be \"Your store. Login\"",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 10000000
             }
           }
         ]
@@ -172,17 +312,17 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1398000000
+              "duration": 1231000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "name": "Admin inputs Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 906000000
+              "duration": 893000000
             }
           },
           {
@@ -192,17 +332,17 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 2391000000
+              "duration": 2370000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Admin can view the Dashboard",
+            "name": "Admin can view \"Dashboard / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 25000000
             }
           },
           {
@@ -212,7 +352,7 @@
             "name": "Admin clicks on Side Bar Button",
             "result": {
               "status": "passed",
-              "duration": 3444000000
+              "duration": 3295000000
             }
           },
           {
@@ -222,7 +362,7 @@
             "name": "Admin clicks on Customers Menu",
             "result": {
               "status": "passed",
-              "duration": 3332000000
+              "duration": 3300000000
             }
           },
           {
@@ -232,7 +372,7 @@
             "name": "Clicks on Customers Menu Item",
             "result": {
               "status": "passed",
-              "duration": 4619000000
+              "duration": 5694000000
             }
           },
           {
@@ -242,17 +382,17 @@
             "name": "Admin can view \"Customers / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 34000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 29,
-            "name": "Admin input Customer Unavailable Email \"nodata@gmail.com\"",
+            "name": "Admin inputs Customer Unavailable Email \"nodata@gmail.com\"",
             "result": {
               "status": "passed",
-              "duration": 1806000000
+              "duration": 1586000000
             }
           },
           {
@@ -262,7 +402,7 @@
             "name": "Admin clicks on Search button",
             "result": {
               "status": "passed",
-              "duration": 339000000
+              "duration": 246000000
             }
           },
           {
@@ -272,7 +412,7 @@
             "name": "\"No data available in table\" message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3405000000
+              "duration": 3595000000
             }
           },
           {
@@ -282,7 +422,7 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 2046000000
+              "duration": 2399000000
             }
           },
           {
@@ -292,7 +432,7 @@
             "name": "Page title should be \"Your store. Login\"",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 13000000
             }
           }
         ]
@@ -312,17 +452,17 @@
             "name": "Admin opens URL \"https://admin-demo.nopcommerce.com/login\"",
             "result": {
               "status": "passed",
-              "duration": 1119000000
+              "duration": 1163000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "Admin input Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "name": "Admin inputs Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "result": {
               "status": "passed",
-              "duration": 918000000
+              "duration": 887000000
             }
           },
           {
@@ -332,17 +472,17 @@
             "name": "Admin clicks Checkbox also clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 1829000000
+              "duration": 2104000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Admin can view the Dashboard",
+            "name": "Admin can view \"Dashboard / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 16000000
             }
           },
           {
@@ -352,7 +492,7 @@
             "name": "Admin clicks on Side Bar Button",
             "result": {
               "status": "passed",
-              "duration": 3375000000
+              "duration": 3315000000
             }
           },
           {
@@ -362,7 +502,7 @@
             "name": "Admin clicks on Customers Menu",
             "result": {
               "status": "passed",
-              "duration": 3375000000
+              "duration": 3337000000
             }
           },
           {
@@ -372,7 +512,7 @@
             "name": "Clicks on Customers Menu Item",
             "result": {
               "status": "passed",
-              "duration": 4967000000
+              "duration": 4540000000
             }
           },
           {
@@ -382,27 +522,27 @@
             "name": "Admin can view \"Customers / nopCommerce administration\" page",
             "result": {
               "status": "passed",
-              "duration": 72000000
+              "duration": 24000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 40,
-            "name": "Admin input Customer First Name \"Ucup\"",
+            "name": "Admin inputs Customer First Name \"Ucup\"",
             "result": {
               "status": "passed",
-              "duration": 1486000000
+              "duration": 1502000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 41,
-            "name": "Admin input Customer Last Name \"Surucup\"",
+            "name": "Admin inputs Customer Last Name \"Surucup\"",
             "result": {
               "status": "passed",
-              "duration": 698000000
+              "duration": 685000000
             }
           },
           {
@@ -412,7 +552,7 @@
             "name": "Admin clicks on Search button",
             "result": {
               "status": "passed",
-              "duration": 347000000
+              "duration": 333000000
             }
           },
           {
@@ -422,7 +562,7 @@
             "name": "\"No data available in table\" message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 3388000000
+              "duration": 3348000000
             }
           },
           {
@@ -432,7 +572,7 @@
             "name": "Admin clicks on Logout link",
             "result": {
               "status": "passed",
-              "duration": 1871000000
+              "duration": 2829000000
             }
           },
           {
@@ -442,7 +582,7 @@
             "name": "Page title should be \"Your store. Login\"",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 13000000
             }
           }
         ]
